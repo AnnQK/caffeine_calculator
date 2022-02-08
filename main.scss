@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Rowdies:wght@300&display=swap');
+
+// font-family: 'Inconsolata', monospace;
+// font-family: 'Rowdies', cursive;
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #ccb9b1;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #08051b;
+}
+
+.header {
+  text-align: center;
+
+  &__title {
+    font-family: 'Rowdies', cursive;
+    font-size: 4rem;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: #fff;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: 1rem;
+}
+
+.section__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border: 0.5rem solid #ccb9b1;
+  border-radius: 1rem;
+
+  &__input {
+    .input-number {
+      text-align: center;
+      padding: 0.5rem;
+      border: #d6e0e6 solid 0.1rem;
+      border-radius: 1rem;
+    }
+  }
+
+  &__radio {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__item__input {
+      cursor: pointer;
+    }
+  }
+
+  &__box__btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: #d6e0e6 solid 0.1rem;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 500;
+    transition: 200ms;
+    &:hover {
+      transform: scale(1.1);
+      background-color: #d6e0e6;
+    }
+  }
+}
+
+.section__output {
+  text-align: center;
+  &__text {
+    padding: 1.5rem;
+    border: 0.5rem solid #ccb9b1;
+    border-radius: 1rem;
+  }
+
+  &__result {
+    padding: 1.5rem;
+    border: 0.5rem solid #ccb9b1;
+    border-radius: 1rem;
+  }
+}
+
+.section__info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Inconsolata', monospace;
+}

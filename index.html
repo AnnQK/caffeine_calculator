@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title>caffeine calculator</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Caffeine calculator</h1>
+    </header>
+    <main class="main">
+      <section class="section">
+        <form method="get" class="section__form">
+          <div class="section__form__input">
+            <input
+              type="number"
+              class="input-number"
+              min="1"
+              max="10"
+              placeholder="Cups"
+              value="1"
+            />
+          </div>
+          <div class="section__form__radio">
+            <div class="section__form__radio__item">
+              <input
+                type="radio"
+                name="coffee"
+                id="espresso"
+                class="section__form__radio__item__input"
+                checked
+              />
+              <label for="espresso">Espresso</label>
+            </div>
+            <div class="section__form__radio__item">
+              <input
+                type="radio"
+                name="coffee"
+                id="alt"
+                class="section__form__radio__item__input"
+              />
+              <label for="alt">Alternative</label>
+            </div>
+            <div class="section__form__radio__item">
+              <input
+                type="radio"
+                name="coffee"
+                id="instant"
+                class="section__form__radio__item__input"
+              />
+              <label for="instant">Inctant</label>
+            </div>
+          </div>
+          <div class="section__form__box">
+            <button class="section__form__box__btn" type="button">Check</button>
+          </div>
+        </form>
+      </section>
+      <section class="section section__output">
+        <p class="section__output__text hidden">Amount of coffee</p>
+        <p class="section__output__result hidden">Result</p>
+      </section>
+    </main>
+    <footer>
+      <section class="section section__info">
+        <div class="section__info__github">
+          <a class="github-link" href="https://github.com/AnnQK">
+            <img
+              src="assets/img/png/GitHub-Mark-64px.png"
+              alt="github-logo"
+              class="github-logo"
+              width="40px"
+              height="40px"
+            />
+          </a>
+        </div>
+        <div class="section__info__year">&copy;2021</div>
+      </section>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
